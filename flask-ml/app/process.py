@@ -8,7 +8,7 @@ from flask import jsonify
 
 def predictImage(url):
     try:
-        model = tf.keras.models.load_model("gs://bloody-happy-bucket/model/model.h5")
+        model = tf.keras.models.load_model("path/to/your/model.h5")
 
         print("Predicting from image url:", url)
 

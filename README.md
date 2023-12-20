@@ -19,7 +19,6 @@ Before you begin, make sure you have the following installed:
 
     ```bash
     git clone https://github.com/CapstoneProject-BloodyHappy/MachineLearning.git
-    cd Model-1
     ```
 
 2. **Train the Model**
@@ -36,6 +35,13 @@ Before you begin, make sure you have the following installed:
 
 4. **Stored the Model**
 
-   Stored the saved h5 model in Google Cloud Storage Bucket and use the link to load the model in the Flask API
+   Stored the model on the flask-ml/app
 
+5. **Model Path**
+
+   On flask-ml/app/process.py add the path to the model.h5
+
+    ```bash
+    model = tf.keras.models.load_model("path/to/your/model.h5")
+    ```
   
